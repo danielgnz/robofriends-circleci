@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Use the latest 2.1 version of CircleCI pipeline processing engine, see https://circleci.com/docs/2.0/configuration-reference/
 version: 2.1
 
@@ -13,3 +14,25 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+=======
+version: 2
+jobs:
+  bobby:
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - checkout
+      - run: echo "A first hello"
+  sally:
+    docker:
+      image: circleci/node:4.8.2
+    steps:
+      - checkout
+      - run: echo "Double trouble"
+workflows:
+  version: 2
+  boby_sally:
+    jobs:
+      - bobby
+      - sally
+>>>>>>> 4e0f35c9b79d038f13bc56338a2c07b8619894af
