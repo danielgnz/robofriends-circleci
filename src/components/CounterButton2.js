@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class CounterButton extends Component {
+class CounterButton2 extends Component {
   constructor                (props) {
     super(props);
                                            this.state = {
@@ -18,7 +18,7 @@ class CounterButton extends Component {
   render() {
     return (
       <button
-        
+
         id='counter'
                             color=
 
@@ -33,4 +33,4 @@ class CounterButton extends Component {
   }
 }
 
-export default CounterButton
+export default CounterButton2;
